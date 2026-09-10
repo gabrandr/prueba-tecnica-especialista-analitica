@@ -47,9 +47,12 @@ export function DashboardView({ data, onLogout, powerBIConfig }: DashboardViewPr
       <main id="main-content" className={styles.main}>
         <FiltersBar filters={filters} options={options} resultCount={filteredClients.length} onChange={handleFilterChange} onClear={clearFilters} />
         <KpiGrid metrics={metrics} />
-        <section className={styles.chartGrid} aria-label="Visualizaciones de la población filtrada">
+        <section aria-labelledby="charts-title">
+          <h2 id="charts-title" className="visually-hidden">Visualizaciones de la población filtrada</h2>
+          <div className={styles.chartGrid}>
           <BarChart eyebrow="Portafolio" title="Tenencia por producto" description="Relaciones cliente-producto; un cliente puede aparecer en varias barras." data={productData} />
           <BarChart eyebrow="Comportamiento" title="Segmentación principal" description="Una clasificación por cliente, sin doble conteo." data={loverData} variant="gold" />
+          </div>
         </section>
         <OpportunityPanel report={data.qualityReport} />
         <ClientTable clients={filteredClients} page={page} pageSize={10} onPageChange={setPage} />
