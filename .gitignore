@@ -1,0 +1,39 @@
+# Documentacion privada de aprendizaje y control
+/mentoria/
+
+# Enunciado confidencial de la evaluacion
+/Digotec_Prueba_Tecnica_Especialista_Analitica_Automatizacion.pdf
+
+# Python y Jupyter
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node, Vite y pruebas frontend
+node_modules/
+dist/
+.vite/
+coverage/
+.vercel/
+
+# Variables y secretos locales
+.env
+.env.*
+!.env.example
+
+# Temporales de Power BI; el archivo .pbix final si se versiona
+*.pbix.tmp
+*.pbix.bak
+~$*.pbix
+
+# Sistema operativo, editores y logs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
