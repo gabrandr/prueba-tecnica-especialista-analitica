@@ -43,8 +43,30 @@ export function ClientTable({ clients, page, pageSize, onPageChange }: ClientTab
           <div className={styles.mobileCards}>{pageClients.map((client) => (
             <article key={client.cliente_id}>
               <div><span>{client.cliente_id}</span><span className={styles.loverBadge}>{client.lover_principal}</span></div>
-              <h3>{client.nombre_cliente}</h3><p>{client.segmento_cliente} · {client.ciudad}</p>
-              <dl><div><dt>Productos</dt><dd>{client.cantidad_productos}</dd></div><div><dt>Deuda</dt><dd>{formatCompactCurrency(client.saldo_deuda_conocido)}</dd></div><div><dt>Consumo</dt><dd>{formatCurrency(client.consumo_total)}</dd></div></dl>
+              <h3>{client.nombre_cliente}</h3>
+              <p>{client.segmento_cliente} · {client.ciudad}</p>
+              <p className={styles.productLine}>{client.productos.join(' · ')}</p>
+              <dl>
+                <div><dt>Productos</dt><dd>{formatNumber(client.cantidad_productos)}</dd></div>
+                <div><dt>Depósitos</dt><dd>{formatCompactCurrency(client.saldo_depositos_conocido)}</dd></div>
+                <div>
+                  <dt>Deuda</dt>
+                  <dd>
+                    {formatCompactCurrency(client.saldo_deuda_conocido)}
+                    {client.saldo_incompleto ? <small>Saldo parcial</small> : null}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Consumo</dt>
+                  <dd>
+                    {formatCurrency(client.consumo_total)}
+                    <small>{formatNumber(client.cantidad_consumos)} consumos</small>
+                  </dd>
+                </div>
+                {client.cantidad_lovers > 1 ? (
+                  <div><dt>Afinidades</dt><dd>{client.cantidad_lovers}</dd></div>
+                ) : null}
+              </dl>
             </article>
           ))}</div>
           <nav className={styles.pagination} aria-label="Paginación de clientes">

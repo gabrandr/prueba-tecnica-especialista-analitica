@@ -39,6 +39,7 @@ export function DashboardView({ data, onLogout, powerBIConfig }: DashboardViewPr
   return (
     <>
       <a className="skip-link" href="#main-content">Saltar al contenido principal</a>
+      <div className={styles.shell}>
       <header className={styles.topbar}>
         <div className={styles.brand}><span aria-hidden="true">D</span><strong>Digotec Analytics</strong><small>Cliente 360</small></div>
         <div className={styles.headerActions}><p>Corte <strong>{formatCutoffDate(data.qualityReport.fecha_corte)}</strong></p><button type="button" onClick={onLogout}>Cerrar sesión</button></div>
@@ -55,6 +56,7 @@ export function DashboardView({ data, onLogout, powerBIConfig }: DashboardViewPr
         <PowerBISection config={powerBIConfig} />
       </main>
       <footer className={styles.footer}><span>Digotec Analytics · MVP demostrativo</span><span>Datos sintéticos · montos presentados en USD*</span></footer>
+      </div>
     </>
   )
 }

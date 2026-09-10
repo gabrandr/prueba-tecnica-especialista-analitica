@@ -17,9 +17,8 @@ export function KpiGrid({ metrics }: { metrics: DashboardMetrics }) {
   ]
   return (
     <section className={styles.kpiGrid} aria-label="Indicadores de la población filtrada">
-      {cards.map((card, index) => (
+      {cards.map((card) => (
         <article className={styles.kpiCard} key={card.label}>
-          <span className={styles.kpiIndex} aria-hidden="true">0{index + 1}</span>
           <p>{card.label}</p><strong>{card.value}</strong><small>{card.detail}</small>
         </article>
       ))}

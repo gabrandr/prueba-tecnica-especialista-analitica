@@ -28,6 +28,7 @@ export function FiltersBar({ filters, options, resultCount, onChange, onClear }:
         <div><p className={styles.eyebrow}>Exploración</p><h1 id="filters-title">Panorama de clientes</h1></div>
         <p className={styles.resultCount} aria-live="polite"><strong>{resultCount.toLocaleString('es-EC')}</strong> clientes visibles</p>
       </div>
+      <div className={styles.filterDock}>
       <button
         className={styles.mobileFilterToggle}
         type="button"
@@ -62,6 +63,7 @@ export function FiltersBar({ filters, options, resultCount, onChange, onClear }:
           </select>
         </label>
         <button className={styles.clearButton} type="button" onClick={onClear} disabled={activeCount === 0}>Limpiar filtros</button>
+      </div>
       </div>
     </section>
   )
