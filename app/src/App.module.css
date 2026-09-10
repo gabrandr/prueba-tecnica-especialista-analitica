@@ -1,0 +1,19 @@
+.statePage {
+  min-height: 100svh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: .8rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f3f6f9;
+}
+
+.statePage h1, .statePage p { margin: 0; }
+.statePage h1 { color: #102b4c; font: 500 2.2rem Georgia, serif; }
+.statePage p { color: #40566e; }
+.statePage small { color: #718093; }
+.statePage button { min-height: 44px; margin-top: .75rem; padding: .75rem 1.25rem; border: 0; border-radius: .55rem; color: #fff; background: #155bb3; font: 700 .9rem inherit; cursor: pointer; }
+.stateCode { width: 3.5rem; height: 3.5rem; display: grid; place-items: center; border-radius: 50%; color: #8a5a00; background: #fff3ce; font: 700 1.5rem Georgia, serif; }
+.loader { width: 3rem; height: 3rem; border: .25rem solid #d8e3ef; border-top-color: #155bb3; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }

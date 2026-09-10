@@ -94,6 +94,8 @@ Los clientes con consumos que no cumplen ninguna regla se clasifican como `Gener
 
 Los Lovers no se copian a `dataset_clean.csv` ni a las tablas de hechos porque son atributos calculados a nivel cliente.
 
+Para permitir KPIs filtrables en React, `cliente_360.csv/json` incluye además `saldo_tarjetas_conocido`. Su total es 2.018.033,83 y el cupo total es 6.146.400,00; por eso la utilización ponderada es 32,83%. El saldo de tarjeta ya está incluido dentro de `saldo_deuda_conocido`: la columna adicional expone ese componente, no un monto que deba sumarse nuevamente.
+
 ## Trazabilidad del dataset limpio
 
 Además de las 15 columnas funcionales, el dataset limpio contiene:
@@ -112,6 +114,8 @@ El TSV original permite reconstruir el valor literal de cualquier fila mediante 
 - Saldo consolidado: 77.356.909,02.
 - Saldo de depósitos: 6.018.429,30.
 - Saldo de deuda: 71.338.479,72.
+- Saldo de tarjetas: 2.018.033,83.
+- Cupo total de tarjetas: 6.146.400,00.
 - Consumo total: 1.862.441,01.
 - Utilización ponderada de tarjeta: 32,83%.
 - Clientes multiproducto: 1.787.
