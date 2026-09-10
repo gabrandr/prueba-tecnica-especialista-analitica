@@ -1,5 +1,5 @@
 {
-  "fase": 2,
+  "fase": 3,
   "fuente": {
     "ruta": "data/raw/Digotec_Prueba_Analitica_Automatizacion_Dataset.tsv",
     "sha256": "4d59a7095f418a9d34276431924cc22540a125dba884fb72421d9d54a43c4115",
@@ -80,7 +80,7 @@
     "data/processed/dim_clientes.csv": {
       "filas": 2200,
       "clave": "cliente_id",
-      "sha256": "8db1a16a910dcfc504af35cf5c63c195f9bbabc3152b16248ca8da2d8ab29d0b"
+      "sha256": "73b8a4053d83c354115f076a54e1b85f5bdd83564f680a535451c4c475559364"
     },
     "data/processed/fact_productos.csv": {
       "filas": 5048,
@@ -95,12 +95,54 @@
     "data/processed/cliente_360.csv": {
       "filas": 2200,
       "clave": "cliente_id",
-      "sha256": "226fc6c399e62176afc498c0711bf127c49a1d0ce2899a402059218b9e9b36ca"
+      "sha256": "ed16a672042c5ccd2fc6f7a864a8c683664174cd123a5813fcbbfaf29dd3f697"
     },
     "data/processed/cliente_360.json": {
       "filas": 2200,
       "clave": "cliente_id",
-      "sha256": "e4039db8aaed9a51759bd2c6ecb52251b1cc0e4f0da90b41544095b617cfcf25"
+      "sha256": "2823d9d805bece7191d5b249fb342003ac379b69b9458400f52130d2e7d68680"
     }
+  },
+  "segmentacion_lovers": {
+    "version": "lover_v1",
+    "fecha_corte": "2026-08-31",
+    "poblacion_consumos": 14873,
+    "regla": {
+      "minimo_consumos_categoria": 2,
+      "minimo_participacion_consumo_total": 0.2,
+      "categorias": [
+        "Travel",
+        "Streaming",
+        "Food",
+        "Technology"
+      ],
+      "denominador": "Consumo positivo total del cliente en las diez categorías"
+    },
+    "conteos_multilabel": {
+      "Travel Lover": 284,
+      "Streaming Lover": 275,
+      "Food Lover": 372,
+      "Tech Lover": 249
+    },
+    "clientes_con_lovers": 1014,
+    "clientes_multilabel": 157,
+    "distribucion_principal": {
+      "Travel Lover": 255,
+      "Streaming Lover": 236,
+      "Food Lover": 322,
+      "Tech Lover": 201,
+      "Generalista": 641,
+      "Sin información transaccional": 545
+    },
+    "empates_participacion_maxima": 0
+  },
+  "metricas_negocio": {
+    "utilizacion_ponderada_tarjeta": 0.328328,
+    "vencimientos_30_dias": 22,
+    "vencimientos_90_dias": 153,
+    "consumos_outlier": 1231,
+    "clientes_con_consumos_outlier": 541,
+    "participacion_transacciones_outlier": 0.082767,
+    "participacion_monto_outlier": 0.376309
   }
 }
