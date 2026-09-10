@@ -1,0 +1,106 @@
+{
+  "fase": 2,
+  "fuente": {
+    "ruta": "data/raw/Digotec_Prueba_Analitica_Automatizacion_Dataset.tsv",
+    "sha256": "4d59a7095f418a9d34276431924cc22540a125dba884fb72421d9d54a43c4115",
+    "filas": 22455,
+    "columnas": 15
+  },
+  "fecha_corte": "2026-08-31",
+  "entorno": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.1",
+    "seaborn": "0.13.2",
+    "jupyterlab": "4.6.3",
+    "ipykernel": "7.3.0",
+    "nbconvert": "7.17.1"
+  },
+  "transformaciones": {
+    "duplicados_exactos_eliminados": 113,
+    "ciudades_recuperadas": 177,
+    "clientes_ciudad_desconocida": 1,
+    "saldos_recuperados": 126,
+    "productos_saldo_desconocido": 8,
+    "clientes_segmento_conflictivo": 211,
+    "segmento_metodos": {
+      "unico": 1989,
+      "moda": 209,
+      "moda_desempate_recencia": 2
+    },
+    "fechas_movimiento_dia_primero": 89,
+    "fechas_invalidas": 0
+  },
+  "normalizacion": {
+    "segmentos": {
+      "mass": "Mass",
+      "joven": "Joven",
+      "affluent": "Affluent",
+      "premium": "Premium",
+      "pyme": "PyME"
+    },
+    "categorias_consumo": {
+      "education": "Education",
+      "entertainment": "Entertainment",
+      "food": "Food",
+      "fuel": "Fuel",
+      "health": "Health",
+      "others": "Others",
+      "streaming": "Streaming",
+      "streamng": "Streaming",
+      "supermarket": "Supermarket",
+      "super market": "Supermarket",
+      "technology": "Technology",
+      "tech": "Technology",
+      "travel": "Travel",
+      "travels": "Travel"
+    }
+  },
+  "reconciliacion": {
+    "saldo_consolidado": 77356909.02,
+    "saldo_depositos": 6018429.3,
+    "saldo_deuda": 71338479.72,
+    "consumo_total": 1862441.01
+  },
+  "banderas": {
+    "productos_saldo_negativo": 117,
+    "productos_saldo_outlier_iqr": 255,
+    "consumos_outlier_iqr": 1231
+  },
+  "validaciones": {
+    "estado": "aprobado",
+    "controles_fallidos": 0
+  },
+  "salidas": {
+    "data/dataset_clean.csv": {
+      "filas": 22342,
+      "clave": "registro_id",
+      "sha256": "0d32838b0c61799f7a47fa4459179d8886e946020ec6fe0b3f28f8335012f4f4"
+    },
+    "data/processed/dim_clientes.csv": {
+      "filas": 2200,
+      "clave": "cliente_id",
+      "sha256": "8db1a16a910dcfc504af35cf5c63c195f9bbabc3152b16248ca8da2d8ab29d0b"
+    },
+    "data/processed/fact_productos.csv": {
+      "filas": 5048,
+      "clave": "cliente_producto_id",
+      "sha256": "67579cbfd35070e0871af3a6e02507c7e4254512b5f97aeea7cc6390dffaa3bb"
+    },
+    "data/processed/fact_consumos.csv": {
+      "filas": 14873,
+      "clave": "consumo_id",
+      "sha256": "0deb1199d6f8fcef13cf510115336293d0cd172a4e5fb897f310d2190cd90d5e"
+    },
+    "data/processed/cliente_360.csv": {
+      "filas": 2200,
+      "clave": "cliente_id",
+      "sha256": "226fc6c399e62176afc498c0711bf127c49a1d0ce2899a402059218b9e9b36ca"
+    },
+    "data/processed/cliente_360.json": {
+      "filas": 2200,
+      "clave": "cliente_id",
+      "sha256": "e4039db8aaed9a51759bd2c6ecb52251b1cc0e4f0da90b41544095b617cfcf25"
+    }
+  }
+}
