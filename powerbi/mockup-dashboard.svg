@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title description">
+  <title id="title">Mockup del dashboard ejecutivo Digotec Analytics</title>
+  <desc id="description">Pagina Power BI 16 a 9 con filtros, seis indicadores, tres graficos y cuatro hallazgos.</desc>
+  <defs>
+    <style>
+      .sans { font-family: "Segoe UI", Arial, sans-serif; }
+      .title { font: 700 25px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .subtitle { font: 12px "Segoe UI", Arial, sans-serif; fill: #adc0d3; }
+      .eyebrow { font: 700 9px "Segoe UI", Arial, sans-serif; letter-spacing: 1.2px; fill: #617489; }
+      .label { font: 600 10px "Segoe UI", Arial, sans-serif; fill: #52677c; }
+      .value { font: 700 22px "Segoe UI", Arial, sans-serif; fill: #102b4c; }
+      .card-title { font: 700 13px "Segoe UI", Arial, sans-serif; fill: #102b4c; }
+      .small { font: 10px "Segoe UI", Arial, sans-serif; fill: #617489; }
+      .axis { font: 9px "Segoe UI", Arial, sans-serif; fill: #52677c; }
+      .insight-number { font: 700 18px "Segoe UI", Arial, sans-serif; fill: #102b4c; }
+      .insight-text { font: 10px "Segoe UI", Arial, sans-serif; fill: #52677c; }
+      .panel { fill: #ffffff; stroke: #d9e2ea; stroke-width: 1; }
+      .filter { fill: #ffffff; stroke: #c9d4df; stroke-width: 1; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#102b4c" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#f3f6f9"/>
+  <rect width="1280" height="76" fill="#102b4c"/>
+  <rect x="0" y="0" width="8" height="76" fill="#c79a3b"/>
+  <text x="32" y="34" class="title">DIGOTEC ANALYTICS</text>
+  <text x="33" y="56" class="subtitle">Cliente 360 · Resumen ejecutivo</text>
+  <text x="1238" y="30" text-anchor="end" class="subtitle">DATOS SINTETICOS</text>
+  <text x="1238" y="52" text-anchor="end" class="sans" font-size="12" font-weight="600" fill="#ffffff">Corte: 31 ago 2026</text>
+
+  <text x="24" y="99" class="eyebrow">FILTROS DE EXPLORACION</text>
+  <g filter="url(#shadow)">
+    <rect x="24" y="108" width="220" height="42" rx="5" class="filter"/>
+    <rect x="254" y="108" width="220" height="42" rx="5" class="filter"/>
+    <rect x="484" y="108" width="220" height="42" rx="5" class="filter"/>
+    <rect x="714" y="108" width="260" height="42" rx="5" class="filter"/>
+    <rect x="984" y="108" width="272" height="42" rx="5" class="filter"/>
+  </g>
+  <g class="label">
+    <text x="38" y="125">SEGMENTO</text><text x="38" y="142" fill="#102b4c">Todos⌄</text>
+    <text x="268" y="125">CIUDAD</text><text x="268" y="142" fill="#102b4c">Todas⌄</text>
+    <text x="498" y="125">LOVER PRINCIPAL</text><text x="498" y="142" fill="#102b4c">Todos⌄</text>
+    <text x="728" y="125">CATEGORIA DE CONSUMO</text><text x="728" y="142" fill="#102b4c">Todas⌄</text>
+    <text x="998" y="125">FECHA DE CONSUMO</text><text x="998" y="142" fill="#102b4c">01/01/2025 — 31/08/2026</text>
+  </g>
+
+  <text x="24" y="177" class="eyebrow">INDICADORES PRINCIPALES</text>
+  <g filter="url(#shadow)">
+    <rect x="24" y="186" width="195" height="76" rx="6" class="panel"/>
+    <rect x="229" y="186" width="195" height="76" rx="6" class="panel"/>
+    <rect x="434" y="186" width="195" height="76" rx="6" class="panel"/>
+    <rect x="639" y="186" width="195" height="76" rx="6" class="panel"/>
+    <rect x="844" y="186" width="195" height="76" rx="6" class="panel"/>
+    <rect x="1049" y="186" width="207" height="76" rx="6" class="panel"/>
+  </g>
+  <g>
+    <text x="40" y="207" class="label">CLIENTES</text><text x="40" y="239" class="value">2.200</text><rect x="40" y="250" width="36" height="3" fill="#155bb3"/>
+    <text x="245" y="207" class="label">MULTIPRODUCTO</text><text x="245" y="239" class="value">1.787</text><rect x="245" y="250" width="36" height="3" fill="#155bb3"/>
+    <text x="450" y="207" class="label">DEPOSITOS</text><text x="450" y="239" class="value">$6,02 M</text><rect x="450" y="250" width="36" height="3" fill="#1f7a5a"/>
+    <text x="655" y="207" class="label">DEUDA</text><text x="655" y="239" class="value">$71,34 M</text><rect x="655" y="250" width="36" height="3" fill="#155bb3"/>
+    <text x="860" y="207" class="label">CONSUMO</text><text x="860" y="239" class="value">$1,86 M</text><rect x="860" y="250" width="36" height="3" fill="#c79a3b"/>
+    <text x="1065" y="207" class="label">UTILIZACION TC</text><text x="1065" y="239" class="value">32,83%</text><rect x="1065" y="250" width="36" height="3" fill="#c79a3b"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="280" width="404" height="245" rx="6" class="panel"/>
+    <rect x="438" y="280" width="404" height="245" rx="6" class="panel"/>
+    <rect x="852" y="280" width="404" height="245" rx="6" class="panel"/>
+  </g>
+
+  <text x="42" y="303" class="eyebrow">CARTERA</text>
+  <text x="42" y="324" class="card-title">Saldo por producto</text>
+  <text x="42" y="342" class="small">Saldo consolidado cliente-producto</text>
+  <g class="axis">
+    <text x="42" y="373">Hipotecario</text><rect x="140" y="363" width="238" height="12" rx="2" fill="#155bb3"/><text x="372" y="373" text-anchor="end" fill="#ffffff">$51,54 M</text>
+    <text x="42" y="404">Vehicular</text><rect x="140" y="394" width="55" height="12" rx="2" fill="#3f79bd"/><text x="202" y="404">$11,44 M</text>
+    <text x="42" y="435">Consumo</text><rect x="140" y="425" width="31" height="12" rx="2" fill="#8aa9cc"/><text x="178" y="435">$6,34 M</text>
+    <text x="42" y="466">Ahorros</text><rect x="140" y="456" width="16" height="12" rx="2" fill="#1f7a5a"/><text x="163" y="466">$3,11 M</text>
+    <text x="42" y="497">Corriente</text><rect x="140" y="487" width="14" height="12" rx="2" fill="#2d8c9d"/><text x="161" y="497">$2,91 M</text>
+  </g>
+
+  <text x="456" y="303" class="eyebrow">COMPORTAMIENTO</text>
+  <text x="456" y="324" class="card-title">Consumo por categoria</text>
+  <text x="456" y="342" class="small">Las cinco categorias de mayor monto</text>
+  <line x1="474" y1="484" x2="816" y2="484" stroke="#d9e2ea"/>
+  <g>
+    <rect x="486" y="371" width="40" height="113" fill="#155bb3"/><text x="506" y="365" text-anchor="middle" class="axis">$274 K</text><text x="506" y="500" text-anchor="middle" class="axis">Food</text>
+    <rect x="548" y="373" width="40" height="111" fill="#3f79bd"/><text x="568" y="367" text-anchor="middle" class="axis">$270 K</text><text x="568" y="500" text-anchor="middle" class="axis">Superm.</text>
+    <rect x="610" y="388" width="40" height="96" fill="#c79a3b"/><text x="630" y="382" text-anchor="middle" class="axis">$233 K</text><text x="630" y="500" text-anchor="middle" class="axis">Travel</text>
+    <rect x="672" y="396" width="40" height="88" fill="#8aa9cc"/><text x="692" y="390" text-anchor="middle" class="axis">$214 K</text><text x="692" y="500" text-anchor="middle" class="axis">Streaming</text>
+    <rect x="734" y="400" width="40" height="84" fill="#2d8c9d"/><text x="754" y="394" text-anchor="middle" class="axis">$203 K</text><text x="754" y="500" text-anchor="middle" class="axis">Tech</text>
+  </g>
+
+  <text x="870" y="303" class="eyebrow">SEGMENTACION</text>
+  <text x="870" y="324" class="card-title">Lover principal</text>
+  <text x="870" y="342" class="small">Una clasificacion por cliente</text>
+  <g class="axis">
+    <text x="870" y="373">Generalista</text><rect x="955" y="363" width="245" height="11" rx="2" fill="#6e7f91"/><text x="1210" y="373">641</text>
+    <text x="870" y="400">Sin informacion</text><rect x="955" y="390" width="208" height="11" rx="2" fill="#91a2b3"/><text x="1173" y="400">545</text>
+    <text x="870" y="427">Food</text><rect x="955" y="417" width="123" height="11" rx="2" fill="#155bb3"/><text x="1088" y="427">322</text>
+    <text x="870" y="454">Travel</text><rect x="955" y="444" width="98" height="11" rx="2" fill="#c79a3b"/><text x="1063" y="454">255</text>
+    <text x="870" y="481">Streaming</text><rect x="955" y="471" width="90" height="11" rx="2" fill="#3f79bd"/><text x="1055" y="481">236</text>
+    <text x="870" y="508">Tech</text><rect x="955" y="498" width="77" height="11" rx="2" fill="#2d8c9d"/><text x="1042" y="508">201</text>
+  </g>
+
+  <text x="24" y="551" class="eyebrow">HALLAZGOS GLOBALES · NO CAMBIAN CON LOS FILTROS</text>
+  <g filter="url(#shadow)">
+    <rect x="24" y="560" width="298" height="112" rx="6" fill="#ffffff" stroke="#d9e2ea"/>
+    <rect x="332" y="560" width="298" height="112" rx="6" fill="#ffffff" stroke="#d9e2ea"/>
+    <rect x="640" y="560" width="298" height="112" rx="6" fill="#fffaf0" stroke="#ead8ac"/>
+    <rect x="948" y="560" width="308" height="112" rx="6" fill="#fffaf0" stroke="#ead8ac"/>
+  </g>
+  <g>
+    <rect x="24" y="560" width="5" height="112" rx="2" fill="#155bb3"/>
+    <text x="45" y="590" class="insight-number">1.014 Lovers</text><text x="45" y="611" class="insight-text">157 clientes cumplen varias reglas.</text><text x="45" y="628" class="insight-text">Probar campañas con grupo de control.</text>
+    <rect x="332" y="560" width="5" height="112" rx="2" fill="#6e7f91"/>
+    <text x="353" y="590" class="insight-number">545 sin consumos</text><text x="353" y="611" class="insight-text">Coinciden con clientes sin tarjeta.</text><text x="353" y="628" class="insight-text">No demuestra inactividad.</text>
+    <rect x="640" y="560" width="5" height="112" rx="2" fill="#c79a3b"/>
+    <text x="661" y="590" class="insight-number">22 / 153</text><text x="661" y="611" class="insight-text">Vencimientos a 30 / 90 dias.</text><text x="661" y="628" class="insight-text">Priorizar renovaciones preventivas.</text>
+    <rect x="948" y="560" width="5" height="112" rx="2" fill="#c79a3b"/>
+    <text x="969" y="590" class="insight-number">37,63% del monto</text><text x="969" y="611" class="insight-text">Esta marcado como consumo outlier.</text><text x="969" y="628" class="insight-text">Revisar; no eliminar automaticamente.</text>
+  </g>
+  <text x="24" y="703" class="small">Datos sinteticos · Montos presentados en USD como supuesto visual · Fecha de corte fija: 31/08/2026</text>
+</svg>

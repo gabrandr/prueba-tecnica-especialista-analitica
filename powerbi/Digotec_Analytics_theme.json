@@ -1,0 +1,50 @@
+{
+  "name": "Digotec Analytics",
+  "dataColors": [
+    "#155BB3",
+    "#C79A3B",
+    "#1F7A5A",
+    "#3F79BD",
+    "#8AA9CC",
+    "#6E7F91",
+    "#B64242",
+    "#8B6CB1",
+    "#2D8C9D",
+    "#D4B76A"
+  ],
+  "firstLevelElements": "#102B4C",
+  "secondLevelElements": "#52677C",
+  "thirdLevelElements": "#D9E2EA",
+  "fourthLevelElements": "#91A2B3",
+  "background": "#FFFFFF",
+  "secondaryBackground": "#F3F6F9",
+  "tableAccent": "#155BB3",
+  "good": "#1F7A5A",
+  "neutral": "#C79A3B",
+  "bad": "#B64242",
+  "maximum": "#155BB3",
+  "center": "#C79A3B",
+  "minimum": "#DCE8F4",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28,
+      "color": "#102B4C"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#102B4C"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#102B4C"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#334A60"
+    }
+  }
+}
