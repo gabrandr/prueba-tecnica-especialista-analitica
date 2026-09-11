@@ -1,8 +1,9 @@
 # Documentacion privada de aprendizaje y control
 /mentoria/
 
-# Skills locales del agente; el lockfile en app/ se versiona
+# Skills y metadatos locales del agente
 /app/.agents/
+/app/skills-lock.json
 
 # Enunciado confidencial de la evaluacion
 /Digotec_Prueba_Tecnica_Especialista_Analitica_Automatizacion.pdf

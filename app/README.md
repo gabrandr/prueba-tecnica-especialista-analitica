@@ -91,7 +91,3 @@ La propuesta completa está en [Arquitectura corporativa](../docs/ARCHITECTURE.m
 - Incluye enlace de salto, foco visible, controles de 44 px, regiones dinámicas y reducción de movimiento.
 - Los datos son sintéticos, la fecha de corte es 2026-08-31 y no existe backend.
 - El despliegue se realizará en la Fase 7.
-
-## AutoSkills
-
-AutoSkills 0.3.6 ayudó a seleccionar guías locales de accesibilidad, composición, diseño, React, TypeScript, Vite, Vitest y Oxlint. Las skills viven en `.agents/` y no son parte del runtime; [skills-lock.json](./skills-lock.json) registra fuentes y hashes. La aplicación se instala, prueba y construye aunque esas guías no estén presentes.
