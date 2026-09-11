@@ -60,6 +60,16 @@ VITE_POWER_BI_WORKSPACE_ID=
 
 Sin una URL HTTPS, la interfaz muestra un estado “no configurado”. Con URL válida, muestra un iframe titulado. Este mecanismo solo prepara el espacio visual: un reporte corporativo privado requiere publicación en Power BI Service, permisos del workspace, autenticación con Microsoft Entra ID, un token de embed emitido de forma segura y, según el alcance, `powerbi-client`. Nunca debe colocarse un secreto o token permanente en variables `VITE_*`, porque se exponen al navegador.
 
+### Evolución corporativa propuesta
+
+El `iframe` actual es únicamente una demostración técnica: no implementa autenticación corporativa, autorización ni seguridad por filas.
+
+Para usuarios internos se recomienda **embed for your organization**. SPFx y React reutilizarían la sesión de Microsoft 365, Power BI Service comprobaría los permisos y el modelo semántico aplicaría RLS. `tenantId`, `workspaceId`, `reportId` y `embedUrl` son identificadores de configuración: no son secretos y tampoco conceden acceso por sí solos.
+
+Tokens, secretos de aplicación, certificados y credenciales de base de datos no deben almacenarse en React, SPFx, variables `VITE_*`, SharePoint Lists ni el repositorio. Si se adoptara *app owns data*, un backend autorizado generaría tokens temporales y custodiaría sus credenciales en un almacén seguro.
+
+La propuesta completa está en [Arquitectura corporativa](../docs/ARCHITECTURE.md) y el flujo diario de vencimientos en [Automatización](../docs/AUTOMATION.md).
+
 ## Comandos
 
 | Comando | Propósito |
