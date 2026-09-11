@@ -122,7 +122,7 @@ La automatización diaria consulta productos próximos a vencer, resuelve al res
 
 - Repositorio: <https://github.com/gabrandr/prueba-tecnica-especialista-analitica>
 - Aplicación desplegada: <https://prueba-tecnica-especialista-analiti.vercel.app/>.
-- Video de presentación: se añadirá después de la grabación final.
+- Video de presentación: [ver en Google Drive](https://drive.google.com/file/d/15qilBIuU8Pnl7dEoGuBo2TxzCyrekoST/view?usp=sharing).
 
 ## Supuestos y limitaciones
 
