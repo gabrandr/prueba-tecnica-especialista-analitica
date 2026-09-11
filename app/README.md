@@ -90,4 +90,4 @@ La propuesta completa está en [Arquitectura corporativa](../docs/ARCHITECTURE.m
 - Los gráficos de barras usan HTML/CSS y mantienen valores textuales para no depender únicamente del color.
 - Incluye enlace de salto, foco visible, controles de 44 px, regiones dinámicas y reducción de movimiento.
 - Los datos son sintéticos, la fecha de corte es 2026-08-31 y no existe backend.
-- El despliegue se realizará en la Fase 7.
+- Despliegue público: <https://prueba-tecnica-especialista-analiti.vercel.app/>.

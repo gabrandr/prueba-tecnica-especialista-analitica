@@ -121,7 +121,7 @@ La automatización diaria consulta productos próximos a vencer, resuelve al res
 ## Enlaces de entrega
 
 - Repositorio: <https://github.com/gabrandr/prueba-tecnica-especialista-analitica>
-- Aplicación desplegada: pendiente de publicación en Vercel.
+- Aplicación desplegada: <https://prueba-tecnica-especialista-analiti.vercel.app/>.
 - Video de presentación: se añadirá después de la grabación final.
 
 ## Supuestos y limitaciones
